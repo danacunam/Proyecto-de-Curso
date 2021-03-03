@@ -1,0 +1,509 @@
+body{
+
+    margin:0;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1.7pt;
+    
+    
+}
+
+.cuerpoIndex-movil{
+
+    display:none;
+}
+
+.fade {
+    /* nombre duracion timing function delay iteration count direction fill mode*/
+    animation: fadeCuerpo 0.7s linear 0s 1 normal forwards;}
+
+
+#topbar{
+
+    height:20vh;
+    display:grid;
+  
+    grid-template-columns:20% 60% 20%;
+    grid-template-areas:"logo menu redes";
+     
+}
+
+
+
+.logo { grid-area:logo;
+    transform: scale(0.6);
+    POSITION: relative;
+   
+}
+
+.nav {
+    grid-area:menu;
+    list-style-type: none;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.85em;
+    font-weight: light;   
+    padding:0;
+    text-align:center;
+    }
+
+.boton-movil{
+
+        display:none;
+    }
+    
+
+.links-1{
+    text-decoration:none;
+    color:black;
+}
+
+.links-1:hover{
+    color:gray;
+    cursor: pointer;
+    border-bottom: solid 1px gray;
+
+}
+
+.redes {grid-area:redes;
+    list-style-type: none; 
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    transform:scale(0.7);}
+
+.icono-1{
+    opacity: 0.6;
+}
+
+.icono-1:hover{
+
+    opacity: 1;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    
+    font-size: 0.75em;
+    letter-spacing: 1.5pt;}
+
+.dropdown-item:hover{
+    
+    
+    letter-spacing: 1.5pt;
+    background-color:gray;
+    color: white;
+}
+
+/* INDEX*/
+
+.cuerpoIndex{
+
+    height:100vh;
+}
+
+/* Seccion contacto ---------------- */
+
+.cuerpoContacto{
+    height:100vh;
+    letter-spacing: 0pt;
+}
+
+
+.contactoIzq{
+    
+ 
+ background-image: url('../img/back_contacto.jpg');
+ background-size: cover;
+ height:80vh;
+
+}
+.contactoDer{
+
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+.formulario{
+
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.formulario ::placeholder{
+
+    font-size: 10px;
+    letter-spacing: 2pt;
+    color:black;
+}
+.titulo-contacto{
+    height: 10vh;
+    font-weight: 100;
+    text-align: center;
+}
+
+.titulo-contacto h3{
+
+    font-weight:100;
+}
+
+.form-control{
+
+    border-radius: 0;
+    margin: 5px;
+    opacity: 0.8;
+}
+
+.btn{
+
+    border-radius:0;
+    font-weight: 300;
+    color:  #ced4da;
+    font-size: 14px;
+
+}
+
+.botones{
+
+    margin-top: 10px;
+}
+.btn-primary{
+
+    background-color: white;
+    border: solid 0.5px black;
+}
+
+.btn:hover{
+
+    background-color: black;
+    border-color: gray;
+}
+
+.direccion-local{
+
+    margin-top: 20px;
+    font-weight: 300;
+font-size: 12px;
+    line-height: 13pt;
+}
+
+/* PORTFOLIO*/
+
+
+
+.grid-gallery {
+    display: grid;
+    grid-auto-rows: 250px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.8rem;
+    grid-auto-flow: row dense;
+    margin-top: 5%;
+  }
+  
+  
+  .grid-gallery__item:nth-child(11n+1) {
+    grid-column: span 2;
+  }
+  
+  .grid-gallery__item:nth-child(11n+3) {
+    grid-row: span 2;
+  }
+  .grid-gallery__item:nth-child(11n+4) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  
+  .grid-gallery__item:nth-child(11n+6) {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+  
+  .grid-gallery__item:nth-child(11n+7) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  
+  .grid-gallery__item:nth-child(11n+8) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .grid-gallery__item:nth-child(11n+9) {
+    grid-row: span 3;
+  }
+  
+  .grid-gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .grid-gallery__image:hover
+  {opacity:0.5;}
+
+
+
+/* Estilos NOSOTROS*/
+
+#nosotros {
+ 
+    display: grid;
+    grid-template-areas: 
+         "qs  qs"
+         "i1t i1f"
+         "i2f i2t"
+         "i3t i3f";
+     
+     grid-template-columns: 50% 50%;    
+     grid-template-rows: 10vh 40vh 40vh 40vh;
+     grid-row-gap: 10px;
+     align-items: center;
+     justify-items:center;
+   
+     
+ }
+
+  h1{
+     font-family: 'Lato', sans-serif;
+     font-size:14px;
+     font-weight: 300;
+ }
+ h3{
+
+    font-size: 14px;
+    text-align: center;
+ }
+ #qs{
+     grid-area:qs;
+     align-items: start;
+     
+ }
+ #i1t{
+     margin-left: 10%;
+     grid-area: i1t;
+     padding: 10px;
+ }
+ 
+ #i1f{
+     grid-area: i1f;
+     height: 40vh;
+ }
+ 
+ #i2t{
+     
+     grid-area: i2t;
+     padding: 10px;
+     margin-right:10%;
+ 
+ }
+ 
+ #i2f{
+     margin-left: 10%;
+     grid-area: i2f;
+     height: 40vh;
+ }  
+ 
+ #i3t{
+     margin-left:10%;    
+     grid-area: i3t;
+     
+ }
+ 
+ #i3f{
+ 
+     grid-area: i3f;
+     height: 40vh;
+ }
+/* TABLET*/
+
+@media (min-width: 768px) and (max-width: 991.98px)  { 
+
+    .nav {
+        grid-area:menu;
+        list-style-type: none;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size:0.7em;
+        font-weight: light;   
+        padding:0;
+        text-align:center;
+        }
+
+
+
+
+ .logo { grid-area:logo;
+    transform: scale(0.4);
+   
+}
+
+.redes{
+
+    display:none;
+}
+
+#topbar{
+
+    height:20vh;
+    width:100vw;
+    display:grid;
+  
+    grid-template-columns:20% 80%;
+    grid-template-areas:"logo menu ";
+     
+}
+
+.dropdown-item {
+    
+    font-size: 0.65em;
+    letter-spacing: 1.5pt;}
+
+}
+ 
+ /*RESPONSIVE MOBILE LANDSCAPE*/
+
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+
+    .nav {
+        grid-area:menu;
+        list-style-type: none;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size:0.2em;
+        font-weight: light;   
+        padding:0;
+        text-align:center;
+        }
+
+    .logo { grid-area:logo;
+    transform: scale(0.4);
+   
+}     
+
+#topbar{
+
+    height:15vh;
+    width:100vw;
+    display:grid;
+  
+    grid-template-columns:20% 80%;
+    grid-template-areas:"logo menu ";
+     
+}
+
+.redes{
+
+    display:none;
+}
+
+.dropdown-item {
+    
+    font-size: 0.55em;
+    letter-spacing: 1.5pt;}
+
+}
+
+
+  
+
+
+/* RESPONSIVE MOBILE XS */
+
+@media (max-width: 575.98px) {
+
+
+
+    .redes{
+
+        display:none;
+    }
+    
+
+    
+
+    .logo { grid-area:logo;
+    transform: scale(0.4);
+    margin-top:-5vh;
+    
+   
+}     
+
+#topbar{
+
+    height:13vh;
+    width:100vw;
+    display:grid;
+  
+    grid-template-columns:20% 60%;
+    grid-template-areas:"logo boton";
+     
+}
+
+.nav{
+    display:none;
+}
+
+
+
+.nav-movil {
+       
+    list-style-type: none;
+    display:flex;
+    flex-direction:column;
+    font-size:0.3em;
+    font-weight: light;   
+    padding:0;
+    text-align:center;
+    width: 100vw;
+    height: 30vh;
+    line-height: 10em;
+    }
+
+.boton-movil{
+
+grid-area: boton;
+display: block;
+margin-top: 3vh;
+
+justify-self:end;
+
+}
+
+.cuerpoIndex{
+
+    display:none;
+}
+
+.cuerpoIndex-movil{
+
+    display:block;
+    
+}
+
+
+
+
+
+ }
+
+
+ /*ANIMACIONES*/
+
+
+ @keyframes fadeCuerpo{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
