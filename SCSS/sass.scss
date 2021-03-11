@@ -1,0 +1,180 @@
+
+
+/*VARIABLES*/
+
+$altoNav: 130px;
+$altoMinNav:14vh;
+$logo: 0.6;
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1.7pt;    
+  }
+
+
+
+
+#topbar{
+ 
+    height: $altoNav;
+    min-height: $altoMinNav;
+    
+}
+
+#topbar-movil{
+
+    display:none;
+}
+
+
+.logo {
+    transform:scale($logo);
+}
+
+
+.overlay {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: rgb(255,255,255);
+    opacity: 0.9;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 10vh;
+    width: 50%;
+    text-align: center;
+    
+  }
+
+  
+  
+  
+  .closebtn {
+    position: absolute;
+    color: black;
+    top: 20px;
+    right: 45px;
+    font-size: 1.5em;
+    text-decoration:none;
+   
+    :hover { color: black;}
+  }
+  
+
+
+
+
+
+
+
+
+/*Tablet*/ 
+
+
+@media (min-width: 576px) and (max-width: 767.98px)
+{
+    #topbar{
+    
+        height: $altoNav*0.85;
+        min-height: $altoMinNav;
+    }
+
+    #topbar-movil{
+
+        display:none;
+    }
+
+    .logo{
+
+        transform:scale($logo*0.8);
+    }
+    
+
+}
+
+
+/* MOBILE LANDSCAPE*/
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+#topbar {
+
+    height: $altoNav*0.85;
+    min-height: $altoMinNav*0.75;
+
+}
+
+#topbar-movil{
+
+    display:none;
+}
+
+.logo{
+
+    transform:scale($logo*0.7);
+}
+
+}
+
+
+
+
+
+/* RESPONSIVE MOBILE XS */
+
+@media (max-width: 575.98px) {
+
+#topbar{
+    display:none;
+}
+
+#topbar-movil{
+display:flex;
+justify-content:center;
+height: $altoNav;
+}
+
+.logo{
+display:none;
+    transform:scale($logo*0.6);
+}
+
+.logo-movil{
+
+    display:block;
+    transform:scale($logo*0.7);
+}
+
+.boton-movil{
+
+    display:flex;
+    align-self: center;
+}
+
+.cuerpoIndex{
+
+    display:none;
+  }
+
+
+ .dropdown-item{
+    line-height:3;
+    font-size:0.5em;
+ }
+
+
+
+
+}
+
+
+

@@ -1,13 +1,4 @@
-body{
 
-  margin:0;
-  padding:0;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  letter-spacing: 1.7pt;
-  
-  
-}
 
 .cuerpoIndex-movil{
 
@@ -21,20 +12,18 @@ body{
 
 #topbar{
 
-  height:20vh;
+ 
   display:grid;
-
   grid-template-columns:20% 60% 20%;
   grid-template-areas:"logo menu redes";
+  
    
 }
 
 
 
 .logo { grid-area:logo;
-  transform: scale(0.6);
-  POSITION: relative;
- 
+
 }
 
 .nav {
@@ -64,11 +53,12 @@ body{
 .links-1:hover{
   color:gray;
   cursor: pointer;
-  border-bottom: solid 1px gray;
-
+  
 }
 
-.redes {grid-area:redes;
+.redes {
+  
+  grid-area:redes;
   list-style-type: none; 
   display:flex;
   flex-direction:row;
@@ -101,16 +91,16 @@ body{
 
 /* INDEX*/
 
-.cuerpoIndex{
 
-  height:100vh;
-}
+
 
 /* Seccion contacto ---------------- */
 
 .cuerpoContacto{
   height:100vh;
+  width: 100%;
   letter-spacing: 0pt;
+ 
 }
 
 
@@ -334,7 +324,7 @@ h3{
       flex-direction:row;
       justify-content: space-evenly;
       align-items: center;
-      font-size:0.7em;
+      font-size:0.8em;
       font-weight: light;   
       padding:0;
       text-align:center;
@@ -355,7 +345,8 @@ h3{
 
 #topbar{
 
-  height:20vh;
+  height:120px;
+  min-height:20vh;
   width:100vw;
   display:grid;
 
@@ -382,7 +373,7 @@ h3{
       flex-direction:row;
       justify-content: space-evenly;
       align-items: center;
-      font-size:0.2em;
+      font-size:0.7em;
       font-weight: light;   
       padding:0;
       text-align:center;
@@ -395,7 +386,7 @@ h3{
 
 #topbar{
 
-  height:15vh;
+  
   width:100vw;
   display:grid;
 
@@ -434,23 +425,23 @@ h3{
 
   
 
-  .logo { grid-area:logo;
-  transform: scale(0.4);
-  margin-top:-5vh;
-  
- 
-}     
+   
 
 #topbar{
 
-  height:13vh;
+  
+  
   width:100vw;
   display:grid;
 
-  grid-template-columns:20% 60%;
+  grid-template-columns:50% 50%;
   grid-template-areas:"logo boton";
    
 }
+
+.logo { grid-area:logo;
+  transform: scale(0.6);
+}   
 
 .nav{
   display:none;
@@ -463,38 +454,24 @@ h3{
   list-style-type: none;
   display:flex;
   flex-direction:column;
-  font-size:0.3em;
+  font-size:1.1em;
   font-weight: light;   
   padding:0;
   text-align:center;
   width: 100vw;
-  height: 30vh;
-  line-height: 10em;
+  line-height: 5em;
   }
 
-.boton-movil{
 
-grid-area: boton;
-display: block;
-margin-top: 3vh;
 
-justify-self:end;
 
-}
-
-.cuerpoIndex{
-
-  display:none;
-}
 
 .cuerpoIndex-movil{
 
   display:block;
+  width:100%;
   
 }
-
-
-
 
 
 }
