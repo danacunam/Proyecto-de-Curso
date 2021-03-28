@@ -9,103 +9,122 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">   
     <link rel="stylesheet" href="styles/styles.css">  
-    <link rel="stylesheet" href="styles/sass.css">
-    <title>Photography | Home </title>
-</head>
-
-<style>
-      
-        
   
-  </style>
-
+    <title>dB Photography | Home </title>
+</head>
 
 
 <body>
 
 <div class="container-fluid">
       
-   <!--COMENTARIO-->
 
-<!--MENU PRINCIPAL-->  
-  
+      <!--MENU PRINCIPAL--> 
+
+      
+        
   <header id="topbar"> 
-            
-            <div class="logo">
-                <img src="img/logo.png" alt="">
-            </div>
+         
+    <div class="row"> 
+           
+      <div class="col-3"> <!--LOGO-->
+           
+        <div class="logo container">
+          <img src="img/logo.png" class="img-fluid" alt="">
+       </div>
 
-    <ul class="nav">
+      </div>
 
-
-      <li><a class="links-1" href="#.html">HOME</a></li>
-      <li><a class="links-1" href="pages/nosotros.html">NOSOTROS</a></li>
-      <li><a class="links-1" href="pages/contacto.html">CONTACTO</a></li>
-      <li class=" links-1">
-              <a class="dropdown-toggle links-1" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                PORTFOLIO
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="pages/bodas.html">CASAMIENTOS</a></li>
-                <li><a class="dropdown-item" href="#">PRENATAL</a></li>
-              </ul>
-    </ul>    
+    <div class="col-md-6 col-9 nav"><!--NAV-->
        
-    <ul class="redes">
-                    
-      <li><img class="icono-1"src="img/facebook.svg" alt=""></li>
-      <li><img class="icono-1" src="img/instagram.svg" alt=""></li>
-  
-       <li><img class="icono-1" src="img/share-2.svg" alt=""></li>
+      
+        <ul class="nav__items">
 
-    </ul>            
-   </header>
-
-
-</div>
-
-
-<!-- MENU MOVIL-->
-
-<div id="topbar-movil">
-  
-  
-  <div class="logo-movil">
-
-    <img src="img/logo.png" class="img-fluid" alt="">
-  
- </div>
-
-
-
-<img src="https://icongr.am/feather/align-justify.svg?size=30&color=currentColor" class="navbar-toggler boton-movil" onclick="openNav()">
-
-<div class="overlay" id="myNav">
-  
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-       
-        <ul class="nav-movil">
-
-          <li><a  class="links-1" href="index.html">HOME</a></li>
-          
+          <li><a class="links-1" href="#.html">HOME</a></li>
           <li><a class="links-1" href="pages/nosotros.html">NOSOTROS</a></li>
           <li><a class="links-1" href="pages/contacto.html">CONTACTO</a></li>
-          <li>
+          <li class=" links-1">
             <a class="dropdown-toggle links-1" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               PORTFOLIO
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <li><a class="dropdown-item" href="pages/bodas.html">CASAMIENTOS</a></li>
               <li><a class="dropdown-item" href="#">PRENATAL</a></li>
-            </ul>
-          </li>
-    </ul>    
-   </div> 
+            </ul>                
+        </ul>
+      
+    </div>  
 
-</div>
+    <div class="col-md-3 redes">   <!--REDES-->
+     
+      <ul class="redes__items">
+                          
+        <li><a href="https://www.facebook.com/danacunafotografia" target="_blank"><img class="icono-1"src="img/facebook.svg" alt="" ></a></li>
+        <li><a href="https://www.instagram.com/danfotografia" target="_blank"><img class="icono-1"src="img/instagram.svg" alt="" ></a></li>
 
-</div>
+        <li><a href="javascript:getlink();"><img class="icono-1" src="img/share-2.svg" alt=""></a></li>
+
+  </ul>     
+          
+    </div>
+  
+  </div>             
+
+  </header>
+
+ 
+
+      <!-- MENU MOVIL-->
+
+      <div id="topbar-movil">
+        
+        
+        <div class="logo-movil">
+
+          <img src="img/logo.png" class="img-fluid" alt="">
+        
+      </div>
+
+
+
+      <img src="https://icongr.am/feather/align-justify.svg?size=30&color=currentColor" class="navbar-toggler boton-movil" onclick="openNav()">
+
+      <div class="overlay" id="myNav">
+        
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+        
+        <div class="overlay-content">
+            
+              <ul class="nav-movil">
+
+                <li><a  class="links-1" href="index.html">HOME</a></li>
+                
+                <li><a class="links-1" href="pages/nosotros.html">NOSOTROS</a></li>
+                <li><a class="links-1" href="pages/contacto.html">CONTACTO</a></li>
+                <li>
+                  <a class="dropdown-toggle links-1" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PORTFOLIO
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="pages/bodas.html">CASAMIENTOS</a></li>
+                    <li><a class="dropdown-item" href="#">PRENATAL</a></li>
+                  </ul>
+                </li>
+          </ul>   
+          
+          <ul class="redes-movil">
+                          
+            <li><img class="icono-1"src="img/facebook.svg" alt=""></li>
+            <li><img class="icono-1" src="img/instagram.svg" alt=""></li>
+        
+            <li><img class="icono-1" src="img/share-2.svg" alt=""></li>
+
+          </ul>    
+        </div> 
+
+      </div>
+
+      </div>
 
 
 
@@ -115,77 +134,222 @@
     
 <!-- cuerpo principal-->
 
-<div class="fade container-fluid cuerpoIndex">
+    <div class="fade container-fluid cuerpoIndex">
 
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-          <img src="img/back_1.jpg" class="d-block w-100" alt="...">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="img/back_1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Wed/w1h.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Pren/6.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Wed/w3h.jpg" class="d-block w-100" alt="...">
+          </div>
+          
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/Wed/w1h.jpg" class="d-block w-100" alt="...">
+
+
+      <!--nosotros-->
+
+      <div id="nosotrosIndx" class="row nosotros-index">
+
+        <div class="col-12 d-flex justify-content-center">
+
+        <a class="links-1" href="pages/nosotros.html">   <h1 > ¿QUIENES SOMOS?</h1></a>
+
+   
+        </div>
+          
+        <div class="col-12 d-flex justify-content-center int-index">
+          
+          <img class="img-fluid w-50" src="img/all-int-f.jpg" alt="">
+        
+        </div>
+       
+      </div> 
+
+      <!--PORTFOLIO-->
+
+      <div class="row">
+
+        <div class="col-12 d-flex justify-content-center gal-index">
+
+           <h2> NUESTROS TRABAJOS</h2>
+  
+     
+          </div>
+
+        <div class="col-6 gal-index d-flex justify-content-center align-items-end">
+          <a href="pages/bodas.html"><img src="img/Wed/5bw.jpg" alt="" class="img-fluid"></a>
+          <h3> CASAMIENTOS</h3>
+
+        </div>
+
+        <div class="col-6 gal-index d-flex justify-content-center align-items-end">
+
+          <a href="pages/prenatal.html">    <img src="img/Pren/4bw.jpg" alt="" class="img-fluid"></a>
+           <h3> PRENATAL</h3>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/Wed/w3h.jpg" class="d-block w-100" alt="...">
-      </div>
+
+
+
+
+
+
+       <!--cuadro de fformulario--> 
+              
+       <div class="col-12 border-bottom">
+
+        <h3 class="contact-txt-index d-flex justify-content-center"> CONTACTANOS</h3>
+       </div>
+             
+       <div class="form-ind border-left border-right"> 
+        <form class="formulario-index container col-6 ">
+          
+          <div> <!-- entradas de texto-->
+
+            <div class="form-group">  
+              <input type="text" class="form-control" id="inputAddress2" placeholder="NOMBRE">
+            </div>
+            <div class="form-group">  
+                <input type="text" class="form-control" id="inputAddress2" placeholder="EMAIL">
+            </div>
+            <div class="form-group">  
+                <input type="text" class="form-control" id="inputAddress2" placeholder="TELEFONO">
+            </div>
+
+          </div> 
+        
+          <div>   <!--text area-->
+              <div class="form-group">
+                
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+
+
+          </div>
+
+          <div class="botones d-flex justify-content-around">
+
+              <input class="btn btn-primary" type="submit" value="ENVIAR">
+              <input class="btn btn-primary" type="reset" value="BORRAR">
+
+          </div>
+                  
+        </form>     
+    
+
+      
+<div class="direccion-local-index d-flex justify-content-center">
+         
+              <p>
+                José Hernández 2716
+                <br>
+                CABA
+                <br>
+                CP 1426
+                <br>
+                Tel: +549 11 2712 7732
+                <br>
+                e-mail: contacto@email.com
+    
+                </p>
+
+</div> 
+
+</div>
+<!-- cierre div formulario-->
+
+
+
+
+
+
+
+
     </div>
-  </div>
 
 
-
-   </div>
 
 
 <!-- CUERPO MOVIL-->
 
-<div class="fade cuerpoIndex-movil container-fluid">
+    <div class="fade cuerpoIndex-movil container-fluid">
 
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item">
-          <img src="img/back_1_Cel.jpg" class="d-block w-100" alt="...">
-      </div>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+              <img src="img/back_1_Cel.jpg" class="d-block w-100" alt="">
+          </div>
 
-      <div class="carousel-item active">
-        <img src="img/Wed/w2v.jpg" class="d-block w-100" alt="...">
-      </div>
+          <div class="carousel-item ">
+            <img src="img/back_2_Cel.jpg" class="d-block w-100" alt="">
+          </div>
 
-      <div class="carousel-item">
-        <img src="img/Wed/w1v.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-item active">
+            <img src="img/back_3_Cel.jpg" class="d-block w-100" alt="">
+          </div>
+    
+        </div>
       </div>
- 
+    
+    
+    
     </div>
-  </div>
- 
- 
- 
-    </div>
 
-
-
-   <!--cierre-->
 
   </div>
 
+
+<!--FOOTER-->
+
+<div id="foot" class="row border-top align-items-center footer">
+  
+  <div class="col-4 ">
+ 
+    <ul class="iconos-redes-foot d-flex justify-content-around">
+                    
+      <li><a href="https://www.facebook.com/danacunafotografia" target="_blank"><img class="icono-1"src="img/facebook.svg" alt="" ></a></li>
+      <li><a href="https://www.instagram.com/danfotografia" target="_blank"><img class="icono-1"src="img/instagram.svg" alt="" ></a></li>
+
+      <li><a href="javascript:getlink();"><img class="icono-1" src="img/share-2.svg" alt=""></a></li>
+
+
+  </ul>  
 </div>
 
+<div class="col-4 d-flex justify-content-center ">
 
-<!-- SCRIPT LOCAL PARA BOTON MOVIL-->
+  <a href="#topbar" class="scroll-b"><img src="img/chevrons-up.svg" alt="" class="icono-1 chevron "></a>
+  <a href="#topbar-movil" class="scroll-b"><img src="img/chevrons-up.svg" alt="" class="icono-1 chevron-movil"></a>
+</div>
+
+  <div class="col-4 d-flex justify-content-center contact">
+  <a href="pages/contacto.html" class="links-1">CONTÁCTANOS</a>
+  </div>
 
 
-<script>
-  function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-  }
-  
-  function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-  }
-</script>
+</div>    
+
+
+
+
+
+
+
+
   
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
