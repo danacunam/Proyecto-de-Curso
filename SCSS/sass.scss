@@ -25,43 +25,40 @@ body{
   }
 
   /*404*/
-
 .error-page{
-
-  background-color: black;
-  height:100vh;
-}
-.error-txt {
-
-  position:absolute;
-  color: whitesmoke;
-  font-weight: 300;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+ 
+#error-txt{
+ 
+  margin-top: 70vh;
+  position: absolute;
+  color:whitesmoke;
+  font-size:1em;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.8);
-  
-  text-align:center;
-  
-  h2 {margin-top:60px;
-    font-size: 1.2em;
-  }
+  span { font-size: 0.7em;
+  a{color: yellow;}}
+@media (max-width:575.98px){
 
-  a
-    {
-      text-decoration:none;
-      color: yellow;
-  
-      &:hover{
-  
-        color: gray;
-        text-decoration:none;
-    }
-  }
-
-  @media (max-width:575.98px){
-   
-   font-size:0.6em;
+  margin-top: 50vh;
 }
 
 }
+
+}
+  
+
+#error-img-m{
+
+  display:none;
+}
+
+
+/* BARRA SUPERIOR */
+
 #topbar{
  
     height: $altoNav;
@@ -152,12 +149,12 @@ body{
 { font-size: 0.5em;}
 }
 
-
+/* FOOTER*/
 
 #foot {
   position: fixed;;
   width:100%;
-  height: 40px;
+  height: 60px;
   bottom:0;
   background-color: white;
  opacity:0;
@@ -191,7 +188,7 @@ body{
 
 
 
-    /*INDEX*/
+/*INDEX*/
 .cuerpoIndex-movil{
   display:none;
 }
@@ -240,8 +237,14 @@ a :hover{
   h1{ font-size:1.1em;
   padding: 60px 0 50px 0;}
   .int-index{ background-color:$fondo-texto;
-  padding: 20px 0 20px 0}
+    display:flex;
+    justify-content: center;
+    max-height: 50vh;
+  padding: 0}
+
 }
+
+
 
 .nosotros-sup{
 
@@ -372,9 +375,11 @@ background-size:cover;
 
 
 .formulario{
+
   display: flex;
   flex-direction:column;
   justify-content: center;
+  align-items:center;
   
 
   & ::placeholder{
@@ -406,18 +411,18 @@ background-size:cover;
 
 
 .titulo-contacto{
+  
   height: 10vh;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
 
-  
   & h3{
     font-size:1.2rem;
-    font-weight:100;
+    font-weight:300;
   }
   & h1{
     font-size:1.2rem;
-    font-weight:100;
+    font-weight:300;
   }
 
   @media (max-width: 767.98px){
@@ -429,7 +434,7 @@ background-size:cover;
 }
 
     & p{
-      font-size:0.5rem;
+      font-size:0.7rem;
     }
 
     .form-control{
@@ -440,10 +445,14 @@ background-size:cover;
 
   } 
   @media (max-width: 575.98px) {
+    display:flex;
+  flex-direction: column;
+  justify-content:center;
+
     height: 12vh;
     background-color:$fondo-texto;
    
-    h1{margin-top:10px;}
+    h1{padding-top:10px;}
 
     
       
@@ -481,8 +490,17 @@ background-size:cover;
 }
 
 .botones{
-
+  display:flex;
   margin-top: 10px;
+  justify-content: space-around;
+  @media (max-width:575.98px)
+  { 
+    justify-content: space-around;
+    .btn{
+      margin-right: 10px;
+    }
+  }
+ 
 }
 
 .btn-primary{
@@ -828,6 +846,9 @@ width:100%;
     
 }
 
+#error-img {display:none;}
+#error-img-m{display:block;}
+
 #topbar-movil{
 display:flex;
 justify-content:center;
@@ -981,9 +1002,6 @@ opacity: 1;
 
 
 
-.botones{
-  align-self:center;
-}
 
 /* GALERIA*/
 

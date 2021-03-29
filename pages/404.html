@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">   
-
   <link rel="stylesheet" href="../styles/styles.css">
  
   <title>dB Photography | Contacto</title>
@@ -17,177 +16,36 @@
 
 <body>
 
-<div class="container-fluid">
-    
-
-     <!--MENU PRINCIPAL--> 
-
-      
-        
-  <header id="topbar"> 
-         
-    <div class="row">
-           
-      <div class="col-3">
-           
-        <div class="logo container">
-          <img src="../img/logo.png" class="img-fluid" alt="">
-        </div>
-
-      </div>
-
-    <div class="col-md-6 col-9  nav">
-       
-      
-        <ul class="nav__items">
-
-          <li><a class="links-1" href="../index.html">HOME</a></li>
-          <li><a class="links-1" href="nosotros.html">NOSOTROS</a></li>
-          <li><a class="links-1" href="contacto.html">CONTACTO</a></li>
-          <li class=" links-1">
-            <a class="dropdown-toggle links-1" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              PORTFOLIO
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="bodas.html">CASAMIENTOS</a></li>
-              <li><a class="dropdown-item" href="prenatal.html">PRENATAL</a></li>
-            </ul>                
-        </ul>
-      
-    </div>  
-
-    <div class="col-md-3 redes">
-     
-      <ul class="redes__items">
-                          
-            <li><a href="https://www.facebook.com/danacunafotografia" target="_blank"><img class="icono-1"src="../img/facebook.svg" alt="" ></a></li>
-            <li><a href="https://www.instagram.com/danfotografia" target="_blank"><img class="icono-1"src="../img/instagram.svg" alt="" ></a></li>
-
-            <li><a href="javascript:getlink();"><img class="icono-1" src="../img/share-2.svg" alt=""></a></li>
-
-      </ul>   
-          
-    </div>
-  
-  </div> 
-          
-  
-
-
-  </header>
-
-
-
-</div>
-
-
-
-
-<!-- MENU MOVIL-->
-
-<div id="topbar-movil">
-        
-        
-  <div class="logo-movil">
-
-    <img src="../img/logo.png" class="img-fluid" alt="">
-  
-</div>
-
-
-
-<img src="https://icongr.am/feather/align-justify.svg?size=30&color=currentColor" class="navbar-toggler boton-movil" onclick="openNav()">
-
-<div class="overlay" id="myNav">
-  
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
-  
-  <div class="overlay-content">
-      
-        <ul class="nav-movil">
-
-          <li><a  class="links-1" href="../index.html">HOME</a></li>
-          
-          <li><a class="links-1" href="nosotros.html">NOSOTROS</a></li>
-          <li><a class="links-1" href="contacto.html">CONTACTO</a></li>
-          <li>
-            <a class="dropdown-toggle links-1" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              PORTFOLIO
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="bodas.html">CASAMIENTOS</a></li>
-              <li><a class="dropdown-item" href="prenatal.html">PRENATAL</a></li>
-            </ul>
-          </li>
-    </ul>   
-    
-    <ul class="redes-movil">
-      <li><a href="https://www.facebook.com/danacunafotografia" target="_blank"><img class="icono-1"src="../img/facebook.svg" alt="" ></a></li>
-      <li><a href="https://www.instagram.com/danfotografia" target="_blank"><img class="icono-1"src="../img/instagram.svg" alt="" ></a></li>
-
-      <li><a href="javascript:getlink();"><img class="icono-1" src="../img/share-2.svg" alt=""></a></li>
-
-
-    </ul>    
-  </div> 
-
-</div>
-
-</div>
 
 
 <!-- 404-->
 
-<div class="error-page">
-<div class="container d-flex justify-content-center">
 
-  <h2 class="error-txt align-self-center"> HTTP 404 - not found <br>¡OOPS, PARECE QUE NO TENEMOS NADA ACÁ!!!</h2>
-  <p class="error-txt align-self-end"> ¡PERO ESTAMOS TRABAJANDO EN ESO! <br> <a href="../index.html">HAZ CLICK AQUI</a>  <br> PARA VOLVER A LA PÁGINA</p>
 
-  <img src="../img/404.jpg" alt="" class="img-fluid">
+<div class="container-fluid error-page">
+
+   <h3 id="error-txt"> HTTP 404 - not found <br>¡OOPS, PARECE QUE NO TENEMOS NADA ACÁ!!!<br>
+   <span> ¡PERO ESTAMOS TRABAJANDO EN ESO! <br> <a href="../index.html">HAZ CLICK AQUI</a>  <br> PARA VOLVER A LA PÁGINA
+   </span>
+  </h3>
+   
+
+  <img src="../img/404.jpg" alt="" class="img-fluid" id="error-img"> 
+  <img src="../img/404m.jpg" alt="" class="img-fluid" id="error-img-m"> 
   
   
 </div>
 
-  
-</div>
-<!--FOOTER-->
-<div id="foot" class="row border-top align-items-center footer">
-  
-  <div class="col-4 ">
- 
-    <ul class="iconos-redes-foot d-flex justify-content-around">
-                    
-      <li><a href="https://www.facebook.com/danacunafotografia" target="_blank"><img class="icono-1"src="../img/facebook.svg" alt="" ></a></li>
-      <li><a href="https://www.instagram.com/danfotografia" target="_blank"><img class="icono-1"src="../img/instagram.svg" alt="" ></a></li>
-
-      <li><a href="javascript:getlink();"><img class="icono-1" src="../img/share-2.svg" alt=""></a></li>
 
 
-  </ul>  
-</div>
 
-<div class="col-4 d-flex justify-content-center ">
-
-  <a href="#topbar" class="scroll-b"><img src="../img/chevrons-up.svg" alt="" class="icono-1 chevron "></a>
-  <a href="#topbar-movil" class="scroll-b"><img src="../img/chevrons-up.svg" alt="" class="icono-1 chevron-movil"></a>
-</div>
-
-  <div class="col-4 d-flex justify-content-center contact">
-  <a href="pages/contacto.html" class="links-1">CONTÁCTANOS</a>
-  </div>
-
-
-</div>       
-
-</div>
 
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-<script src="../js/script.js"></script> 
+
 </body>
 
 </html>
