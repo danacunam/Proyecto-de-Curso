@@ -258,8 +258,7 @@ body {
 .formulario {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
   .formulario ::placeholder {
     font-size: 0.4rem;
     letter-spacing: 2.21pt;
@@ -272,7 +271,6 @@ body {
       font-size: 0.7rem; } }
 
 .titulo-contacto {
-  height: 10vh;
   font-weight: 300;
   text-align: center; }
   .titulo-contacto h3 {
@@ -324,9 +322,7 @@ body {
   justify-content: space-around; }
   @media (max-width: 575.98px) {
     .botones {
-      justify-content: space-around; }
-      .botones .btn {
-        margin-right: 10px; } }
+      justify-content: space-around; } }
 
 .btn-primary {
   background-color: white;
@@ -336,7 +332,9 @@ body {
   margin-top: 15px;
   font-weight: 300;
   font-size: 12px;
-  line-height: 13pt; }
+  line-height: 13pt;
+  text-align: right;
+  background-color: rgba(245, 245, 245, 0.7); }
   @media (max-width: 767.98px) {
     .direccion-local {
       font-size: 7px;

@@ -189,6 +189,7 @@ body{
 
 
 /*INDEX*/
+
 .cuerpoIndex-movil{
   display:none;
 }
@@ -374,12 +375,13 @@ background-size:cover;
 }
 
 
+
 .formulario{
 
   display: flex;
   flex-direction:column;
   justify-content: center;
-  align-items:center;
+
   
 
   & ::placeholder{
@@ -411,8 +413,7 @@ background-size:cover;
 
 
 .titulo-contacto{
-  
-  height: 10vh;
+ 
   font-weight: 300;
   text-align: center;
 
@@ -496,9 +497,7 @@ background-size:cover;
   @media (max-width:575.98px)
   { 
     justify-content: space-around;
-    .btn{
-      margin-right: 10px;
-    }
+   
   }
  
 }
@@ -515,6 +514,8 @@ background-size:cover;
   font-weight: 300;
   font-size: 12px;
   line-height: 13pt;
+  text-align: right;
+  background-color: $fondo-texto;
 
   @media (max-width: 767.98px){
 

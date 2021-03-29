@@ -111,20 +111,3 @@ window.addEventListener('scroll', scrollT);
 
 
 
-/*let footer = document.querySelectorAll(".foot");
-function mostrarScroll() {
-  let scrollTop= document.documentElement.scrollTop;
-  for (var i=0;i<footer.length;i++){
-    let altura= footer[i].offsetTop;
-    if(altura - 900  < scrollTop ){ 
-      footer[i].style.opacity=1;
-
-    } 
-    else{footer[i].style.opacity=0;} 
-  }
-  
-}
-
-window.addEventListener('scroll', mostrarScroll);
-
- */
